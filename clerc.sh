@@ -1042,7 +1042,7 @@ if [ $BASH ]; then
 	#: The path is valid at least on fedora and debian with installed bash-completion package
 	_N=/usr/share/bash-completion
 	_clexe $_N/bash_completion
-	_clexe $_N/completions/ssh && complete -F _ssh lssh
+	_clexe $_N/completions/ssh && complete -F _comp_cmd_ssh lssh
 else
 	# ZSH completions
 	autoload compinit && compinit
